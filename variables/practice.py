@@ -19,3 +19,14 @@ color_eye = "brown"
 Age = 14
 
 favorite_sudject = "math"
+
+print(name)
+print(small_number)
+print(large_number)
+print(breakfast)
+print(favorite_color)
+print(school_name)
+print(year)
+print(color_eye)
+print(Age)
+print(favorite_sudject)
