@@ -10,4 +10,12 @@ breakfast = "nothing"
 
 favorite_color = "red"
 
-school
+school_name = "ucas"
+
+year = 2025
+
+color_eye = "brown"
+
+Age = 14
+
+favorite_sudject = "math"
