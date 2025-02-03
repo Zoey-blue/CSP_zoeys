@@ -1,8 +1,11 @@
+//zoey sosa, Variables Notes C
 #include <stdio.h>
 
-int main(void){
-
-char name[] = "zoey";
+char name[20];
+int age;
+float pi;
+int main (void){
+char name[20] = "zoey";
 
 int age = 14;
 
@@ -21,6 +24,7 @@ int year = 2025;
 char eyecolor[] ="brown";
 
 char favorite_subject[] = "math";
+
 printf("%s, %d, %d, %d,%s, %s, %s, %d, %s, %s", name, age, small_number, big_number, breakfast, color, school_name, year, eyecolor, favorite_subject);
 
     return 0;
