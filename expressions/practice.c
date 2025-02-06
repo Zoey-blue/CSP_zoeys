@@ -14,7 +14,7 @@ int main(void){
 
     printf("%d\n", -1*((3-4*7)/5)-2*24/6);
 
-    printf()
+    printf((3*5**2/15)-(5-2**2));
 
     return 0;
 }
