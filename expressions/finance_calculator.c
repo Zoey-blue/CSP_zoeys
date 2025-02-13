@@ -2,24 +2,27 @@
 #include <stdio.h>
 #include <math.h>
 
-
+char name [1000];
 float income,rent,utilities, groceries, transportation,savings,spendings;
 
 int main(void){
-printf("what is your income?");
-scanf("%s",income);
 
-printf("what is your rent?");
-scanf("%s",rent);
+printf("Welcome to my finance calculator!\n");
 
-printf("how much is your utilities?");
-scanf("%s", utilities);
+printf("what is your income?\n");
+scanf("%f",&income);
 
-printf("how much is your groceries?");
-scanf("%s",groceries);
+printf("what is your rent?\n");
+scanf("%f",&rent);
 
-printf("how much is your transprtation?");
-scanf("%s",transportation);
+printf("how much is your utilities?\n");
+scanf("%f",&utilities);
+
+printf("how much is your groceries?\n");
+scanf("%f",&groceries);
+
+printf("how much is your transprtation?\n");
+scanf("%f",&transportation);
 
 float savings=income*0.1;
 float spending=income-savings-rent-utilities-groceries-transportation;
@@ -30,10 +33,16 @@ float transportation_percentage= transportation/income *100;
 float spending_percentage= spending/income *100;
 float saving_percentage= savings/income *100;
 
-printf ("your rent is $",rent,",which is",rent_percentage, "of your income");
+printf ("your rent is $ %f, which is %f, percent of your income\n", rent, rent_percentage);
 
-printf("your utilities is $",utilities,",which is" ,utilities_percentage, "of your income");
+printf ("your utilities is $ %f, whitch is %f, percent of your incme\n", utilities, utilities_percentage);
 
-printf("")
+printf ("your groceries is $ %f, which is %f, percent of your income\n", groceries, groceries_percentage);
+
+printf ("your transportation is $ %f, which is %f, percent of your income\n", transportation, transportation_percentage);
+
+printf ("your saving is $ %f, which is %f, percent of your income\n", savings, saving_percentage);
+
+printf ("your spending is $ %f, which is %f, percent of your income\n", spending, spending_percentage);
     return 0;
 }
