@@ -33,16 +33,16 @@ float transportation_percentage= transportation/income *100;
 float spending_percentage= spending/income *100;
 float saving_percentage= savings/income *100;
 
-printf ("your rent is $ %f, which is %f, percent of your income\n", rent, rent_percentage);
+printf ("your rent is $ %.2f, which is %.2f, percent of your income\n", rent, rent_percentage);
 
-printf ("your utilities is $ %f, whitch is %f, percent of your incme\n", utilities, utilities_percentage);
+printf ("your utilities is $ %.2f, whitch is %.2f, percent of your incme\n", utilities, utilities_percentage);
 
-printf ("your groceries is $ %f, which is %f, percent of your income\n", groceries, groceries_percentage);
+printf ("your groceries is $ %.2f, which is %.2f, percent of your income\n", groceries, groceries_percentage);
 
-printf ("your transportation is $ %f, which is %f, percent of your income\n", transportation, transportation_percentage);
+printf ("your transportation is $ %.2f, which is %.2f, percent of your income\n", transportation, transportation_percentage);
 
-printf ("your saving is $ %f, which is %f, percent of your income\n", savings, saving_percentage);
+printf ("your saving is $ %.2f, which is %.2f, percent of your income\n", savings, saving_percentage);
 
-printf ("your spending is $ %f, which is %f, percent of your income\n", spending, spending_percentage);
+printf ("your spending is $ %.2f, which is %.2f, percent of your income\n", spending, spending_percentage);
     return 0;
 }
