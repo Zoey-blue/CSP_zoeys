@@ -27,4 +27,3 @@ int main(void){
     strcat(three,one); //can only concattenate 2 things at a time
     return 0;
 }
-sgv jsngoenoengwegmgpowme

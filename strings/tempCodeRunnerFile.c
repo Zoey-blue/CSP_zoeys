@@ -1,0 +1,1 @@
+  strcat(decor1, decor2);
