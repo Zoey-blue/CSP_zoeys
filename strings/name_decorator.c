@@ -9,6 +9,10 @@ int main(void){
     scanf ("%s", name);
     char decor1 [20] ="^^^";
     char decor2 [20] = "^^^";
-    printf("%s%s%s", decor1, name, decor2);
-    return 0;
+    printf("%s\n",decor1);
+    strcat(decor1,name);
+    printf("%s\n",decor2);
+    strcat(decor1, decor2);
+    printf("%s", decor1);
+    return 0; 
 }
