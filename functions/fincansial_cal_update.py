@@ -3,6 +3,8 @@ def info(cost, income, type):
     percentage= cost/income *100
     print(f"your {type} is ${cost:.2f} rent which is,{percentage}%, of your income")
 
+def info():
+    print(f"what is your {}?\n")
 # print statment that welcomes user and tells what program dose
 
 # ask what their income is (varible an input)
