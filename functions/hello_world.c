@@ -1,7 +1,11 @@
-//zoey sosa, TEMPLATE
+//zoey sosa, hello world update python
 #include <stdio.h>
 
-int main(void){
-    printf("hello world");
-    return 0;
+
+void add(char name[50]){
+    printf("Jasper");
+    printf("Zoey");
+    printf("Josephine");
+    printf("Amon");
+    printf("Sam");
 }
