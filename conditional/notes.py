@@ -19,7 +19,7 @@ else: # if the boolean is false, the else statemnet happens
     print(f"hello {name}!")
 
 #What kind of statement do you use if you have more than 2 needed outcomes?
-num = 2
+num = int(input("how many cookies are there:\n"))
 #computers read top to bottom, check the least likely first 
 if num == 0: #<= if always starts the conditional 
     print("There are none.")
@@ -57,7 +57,12 @@ if num <10:
     if num  ==8: 
         print("this prints at 8")
     else:
-        print("the number is less than 10")
+        if num == 4:
+            print("there are only enough coolies left for me. . . sorry")
+        else:
+            print("the number is less than 10")
+else:
+    print("the number is bigger than 10")
 
 #How do you write an if statement in C?
 #How do you write else statements in C?

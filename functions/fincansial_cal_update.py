@@ -11,8 +11,8 @@ rent = user("rent")
 utilities= user("utilities")
 groceries= user("groceries")
 transportation= user("transportation")
-
 spending= user ("spending")
+saving= user("saving")
 
 info(rent, income, "rent")
 info(utilities, income, "utilites")
