@@ -24,6 +24,7 @@ if(num == 0){
 }else is (num <=5){
     printf("you have a few siblings\n");
 }
+}
 
 //13. How do you write the 3 logical operators in C?
 //&& = and 
