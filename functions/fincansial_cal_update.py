@@ -11,13 +11,13 @@ rent = user("rent")
 utilities= user("utilities")
 groceries= user("groceries")
 transportation= user("transportation")
-spending= user ("spending")
-saving= user("saving")
+spending= rent+utilities+groceries+transportation
+savings = income*0.1
 
 info(rent, income, "rent")
 info(utilities, income, "utilites")
 info(groceries, income, "groceries")
 info(transportation, income, "transportation")
 info(rent, income, "rent")
-info(saving, income, "saving")
-info(spending, income, "spending")
+info(savings, income, "savings")
+info(spending,income, "spending")
