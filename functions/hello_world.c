@@ -2,14 +2,18 @@
 #include <stdio.h>
 #include <math.h>
 
-void add(char name[50]){
+void add(char name[]){
       printf("Hello %s!\n",name);
 }
+
 int main(void){
     char name[50];
-    
+
+    printf("what is your name?\n");
+    scanf("%s", name);
+    add(name);
+
     add("Jasper");
-    add("Zoey");
     add("Josephine");
     add("Amon");
     add("Sam");
