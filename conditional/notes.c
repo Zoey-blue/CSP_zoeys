@@ -18,10 +18,10 @@ print("How many siblings do you have?\n");
 scanf("%d", &num);
 //12. How do you write elif/ else if statements in C?
 if(num == 0){
-    print("you are a only child\n");
+    printf("you are a only child\n");
 }else if (num <=2){
-    print("you have a couple siblings\n");
-}else is (num <=5){
+    printf("you have a couple siblings\n");
+}else is (num <=5);{
     printf("you have a few siblings\n");
 }
 }
