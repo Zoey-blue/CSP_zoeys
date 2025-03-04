@@ -1,48 +1,36 @@
-//zoey sosa, fincansail calulator update C
+//zoey sosa, Financial Calculator update C
 #include <stdio.h>
 #include <math.h>
 
-char name [1000];
-float income,rent,utilities, groceries, transportation,savings,spendings;
+float user_input(char *prompt){
+    float value;
+    printf("%s",prompt);
+    scanf("%f",&value);
+    return value;
+}
 
-int main(void){
+void print_result(char*item_name, float amount, float income){
+    float percentage= (amount/income)*100;
+    printf("your %s are $%.2f which is %.2f%% of your income.\n", item_name, amount, percentage);
+}
 
-printf("Welcome to my finance calculator!\n");
+int main(){
+    float income,rent,utilities, groceries, transportation,savings,spendings;
+    printf("Welcome to your finance calculator!\n");
+    income= user_input("what is your income\n");
+    rent= user_input("what is your rent?\n");
+    utilities= user_input("what are your utilities?\n");
+    groceries= user_input("how much are your groceries?\n");
+    transportation= user_input ("how much is your transportation?\n");
 
-printf("what is your income?\n");
-scanf("%f",&income);
+    savings= income*0.1;
+    spendings= income-savings-rent-utilities-groceries-transportation;
 
-printf("what is your rent?\n");
-scanf("%f",&rent);
-
-printf("how much is your utilities?\n");
-scanf("%f",&utilities);
-
-printf("how much is your groceries?\n");
-scanf("%f",&groceries);
-
-printf("how much is your transprtation?\n");
-scanf("%f",&transportation);
-
-float savings=income*0.1;
-float spending=income-savings-rent-utilities-groceries-transportation;
-float rent_percentage= rent/income *100;
-float utilities_percentage= utilities/income *100;
-float groceries_percentage= groceries/income *100;
-float transportation_percentage= transportation/income *100;
-float spending_percentage= spending/income *100;
-float saving_percentage= savings/income *100;
-
-printf ("your rent is $ %.2f, which is %.2f, percent of your income\n", rent, rent_percentage);
-
-printf ("your utilities is $ %.2f, whitch is %.2f, percent of your incme\n", utilities, utilities_percentage);
-
-printf ("your groceries is $ %.2f, which is %.2f, percent of your income\n", groceries, groceries_percentage);
-
-printf ("your transportation is $ %.2f, which is %.2f, percent of your income\n", transportation, transportation_percentage);
-
-printf ("your saving is $ %.2f, which is %.2f, percent of your income\n", savings, saving_percentage);
-
-printf ("your spending is $ %.2f, which is %.2f, percent of your income\n", spending, spending_percentage);
+    print_result("rent",rent, income); 
+    print_result("utilities",utilities, income); 
+    print_result("groceries",groceries, income); 
+    print_result("transportation",transportation, income); 
+    print_result("savings",savings, income); 
+    print_result("spendings",spendings, income); 
     return 0;
 }
