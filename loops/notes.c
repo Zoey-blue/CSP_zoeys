@@ -1,4 +1,4 @@
-//zoey sosa, TEMPLATE
+//zoey sosa, Notes in C
 #include <stdio.h>
 
 int main(void){
@@ -25,7 +25,10 @@ int main(void){
 //How do you make arrays (lists) in C?
     //arrays items must be all the same data type
 int grades[] = {88, 97, 100, 70, 72, 99, 61};
-// 1. set data type 2. AFTER naming put brackets and write the lenth of the list 3. list is surrounded by curly brackets {} 4. commas, between each item 
+// 1. set data type
+//2. AFTER naming put brackets and write the lenth of the list
+//3. list is surrounded by curly brackets {}
+//4. commas, between each item
 
 //How do you make for loops in C?
 printf("CSP Grade: %d\n", grades[2]);

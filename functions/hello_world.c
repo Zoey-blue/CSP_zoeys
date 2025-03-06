@@ -1,4 +1,4 @@
-//zoey sosa, hello world update python
+//zoey sosa, hello world update c
 #include <stdio.h>
 #include <math.h>
 
