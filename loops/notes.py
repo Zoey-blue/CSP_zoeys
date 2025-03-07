@@ -53,15 +53,8 @@ goose = random.randint(1,20)
 
 while x <=20:
     if x == goose:
-    print("goose")
-    break # tells the loop to stop 
-else :
-    print("duck")
+        print("goose")
+        break# tells the loop to stop 
+    else :
+        print("duck")
     x+=1
-
-
-
-
-#How do you make lists in C?
-#How do you make for loops in C?
-#How do you make while loops in C?

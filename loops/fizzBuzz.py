@@ -1,3 +1,15 @@
 # Zoey Sosa, FizzBuzz python
 
-nums = [1,2,3,4,5,6,7,]
+import range
+x = 3 #varible to keep count of iteration
+num = range(1,50)
+
+while x <=50:
+    if x == :
+    print("fizz")
+    break# tells the loop to stop 
+else :
+    print("")
+    x+=1
+
+    
