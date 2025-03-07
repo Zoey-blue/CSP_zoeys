@@ -3,8 +3,13 @@
 
 int main(void){
     char sibilings[][20] = {"Sabrina","Maisha", "Cinthia"};
-printf("Hello %s!\n", sibilings[0]);
-printf("Hello %s!\n" , sibilings[1]);
-printf("Hello %s!\n", sibilings[2]);
+    int flength = sizeof(sibilings)/sizeof(sibilings[0]);
+
+    int i;
+    for (i=0;i<flength;i++){
+        printf("hello %s\n",sibilings[i]);
+
+    }
+
     return 0;
 }
