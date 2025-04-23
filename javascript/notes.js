@@ -17,9 +17,20 @@ function change (){
 }
 
 function hello(){
-    document.getElementById("title").innerHTML. = "hello world"
+    let name = window.prompt("what is your name?")
+    document.getElementById("title").innerHTML. ="hello world" + name + "!"
 
 }
+
 function hover(){
     document.getElementById("img").src= "https://www.tnnursery.net/cdn/shop/files/pineapple-new3.jpg?v=1736956964"
+}
+
+function pop(){
+    window.alert
+    ("really don't click that!")
+}
+
+function show(){
+    document.getElementById
 }
