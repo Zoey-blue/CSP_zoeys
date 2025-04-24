@@ -32,5 +32,5 @@ function pop(){
 }
 
 function show(){
-    document.getElementById
+    document.getElementById("more").style.display = "block"
 }
