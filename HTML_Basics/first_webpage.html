@@ -3,14 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title> Art stuff</title>
-        <script src="blah.js"></script>
+        <script src="firstweb.js"></script>
         <style>
             #content{
                 display:grid;
                 grid-template-columns:1fr 3fr;
             }
-            #image{
-                height: 50px;
+            #img1{
+                display: none;
+            }
+            #img2{
+                width:auto;
+            }
+            #img3{
                 width: auto;
             }
             body{
@@ -19,7 +24,14 @@
             }
             p{
                 font-family: georgia, 'times new roman';
-                text-align:  center;
+            }
+            #hoverspot{
+            background-color:rgb(255, 0, 0);
+            border: 1px solid rgb(rgb(12, 12, 255));
+            width: 100px;
+            height: 50px;
+            display: flex;
+            flex-direction: row-reverse;
             }
         </style>
     </head>
@@ -27,10 +39,11 @@
         <h1>Art is so intersting</h1>
         <h2>Why Art?</h2>
         <p> Art is very general but I love all of it, Painting, sculpting, writing, dancing, and  music. Art feeds the soul and there is so much art everywhere in the world it's all so amazing. I think that all of the different forms can touch so many different people. Everyone should try a form or art, the product doesn't have to be good but just try.</p>
+
         <h3>How All Art is Cool</h3>
         <p>Painting, painting an image that speaks to you and loving everything about it because it is so unique is beautiful. Sculpting, how people can have a block of clay and turn it into a masterpiece is crazy. It is very hands-on and takes skill to learn and master. There are so many different mediums that you can sculpt in like stone, clay, wood they all take skill and practice to make look good. Music can reach so many different people and it's so beautiful to see when you get to connect through music through the lyrics.</p>
 
-        <div>
+        <div id="img1">
             <img src=" https://media.istockphoto.com/id/636761588/photo/used-brushes-on-an-artists-palette-of-colorful-oil-paint.jpg?s=612x612&w=0&k=20&c=38YQxVJVWnNfvGtlb7AXMx_ItyHZMEdmWenNkWNQ91g=" alt= "painting" ><p>image from: koliadzynskalyna</p>
         </div>
 
@@ -44,13 +57,14 @@
             <li> theatre </li>
           </ol>
 
-
+    <div id = "img2">
         <img src="https://www.goldenroadarts.org/wp-content/uploads/2022/01/Painting-styles-for-Hillsboro-artists.jpg" alt="painting" > 
         <p>image from: golden road arts  </p>
-
+    </div>
+    <div id= "img3">
         <img src="https://www.newdirectionsreading.ac.uk/wp-content/uploads/2024/07/Sculpting-in-clay.jpg" alt="scultping"> 
         <p>image from: new direction college</p>
-
+    </div>
         <br>
         
         <div> 
