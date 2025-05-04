@@ -2,18 +2,73 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> Vacation spot </title>
+        <title> Art stuff</title>
+        <script src=""></script>
         <style>
-            p{
-                text-align: center;
+            #content{
+                display:grid;
+                grid-template-columns:1fr 3fr;
             }
-            #image{
-                height:100px;
+            #img1{
+                display: none;
+            }
+            #img2{
+                width:auto;
+            }
+            #img3{
                 width: auto;
             }
-            
+            body{
+                background-color:rgb(0, 0, 0) ;
+                color:rgb(255, 255, 255);
+            }
+            p{
+                font-family: georgia, 'times new roman';
+            }
+            #hoverspot{
+            background-color:rgb(255, 0, 0);
+            border: 1px solid rgb(rgb(12, 12, 255));
+            width: 100px;
+            height: 50px;
+            display: flex;
+            flex-direction: row-reverse;
+            }
         </style>
     </head>
     <body>
-        <h1> Vacation spot </h1>
-        
+        <h1> vaction spot </h1>
+        <h2></h2>
+        <p> </p>
+
+        <h3></h3>
+        <p></p>
+
+        <div id="img1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Delicate_arch_sunset.jpg" alt= "arches" ><p>image from: wikipedia</p>
+        </div>
+
+        <ol> <!---ordered list--->
+            <li> painting</li>
+            <li> scuplting </li>
+            <li> writing </li>
+            <li> music </li>
+            <li> dancing </li>
+            <li> photography </li>
+            <li> theatre </li>
+          </ol>
+
+    <div id = "img2">
+        <img src="" alt="painting" > 
+        <p>image from: golden road arts  </p>
+    </div>
+    <div id= "img3">
+        <img src="" alt="scultping"> 
+        <p>image from: new direction college</p>
+    </div>
+
+        <div id= "button">
+            <button id="hoverspot" onmouseover="view()"></button>
+        </div>
+
+    </body>
+</html>
