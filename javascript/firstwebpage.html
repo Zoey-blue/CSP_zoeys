@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Art stuff</title>
+    <style>
+        #content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        #image {
+            height: 50px;
+            width: auto;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            font-family: Georgia, 'Times New Roman';
+            text-align: center;
+            margin: 15px auto;
+            padding: 10px;
+            max-width: 600px;
+        }
+
+        #extraContent {
+            display: none;
+        }
+
+        .hover-img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Art is so intersting</h1>
+        <h2>Why Art?</h2>
+        <p> Art is very general but I love all of it, Painting, sculpting, writing, dancing, and  music. Art feeds the soul and there is so much art everywhere in the world it's all so amazing. I think that all of the different forms can touch so many different people. Everyone should try a form or art, the product doesn't have to be good but just try.</p>
+        <h3>How All Art is Cool</h3>
+        <p>Painting, painting an image that speaks to you and loving everything about it because it is so unique is beautiful. Sculpting, how people can have a block of clay and turn it into a masterpiece is crazy. It is very hands-on and takes skill to learn and master. There are so many different mediums that you can sculpt in like stone, clay, wood they all take skill and practice to make look good. Music can reach so many different people and it's so beautiful to see when you get to connect through music through the lyrics.</p>
+
+    <div>
+        <img src="https://media.istockphoto.com/id/636761588/photo/used-brushes-on-an-artists-palette-of-colorful-oil-paint.jpg?s=612x612&w=0&k=20&c=38YQxVJVWnNfvGtlb7AXMx_ItyHZMEdmWenNkWNQ91g=" alt="painting">
+        <p>Image from: koliadzynskalyna</p>
+    </div>
+
+    <ol>
+        <li>Painting</li>
+        <li>Sculpting</li>
+        <li>Writing</li>
+        <li>Music</li>
+        <li>Dancing</li>
+        <li>Photography</li>
+        <li>Theatre</li>
+    </ol>
+
+    <img src="https://www.goldenroadarts.org/wp-content/uploads/2022/01/Painting-styles-for-Hillsboro-artists.jpg" 
+         alt="painting" 
+         class="hover-img" 
+         onmouseover="this.src='https://cdn.pixabay.com/photo/2016/11/18/12/52/paint-1836806_960_720.jpg'" 
+         onmouseout="this.src='https://www.goldenroadarts.org/wp-content/uploads/2022/01/Painting-styles-for-Hillsboro-artists.jpg'">
+    <p>Image from: Golden Road Arts</p>
+
+    <img src="https://www.newdirectionsreading.ac.uk/wp-content/uploads/2024/07/Sculpting-in-clay.jpg" alt="sculpting">
+    <p>Image from: New Direction College</p>
+
+    <br>
+    <p>This is a website talking about the different forms of art and the history behind them! 
+       <a href="https://en.wikipedia.org/wiki/The_arts">Click here</a></p>
+
+    <button onclick="toggleExtra()">Show More About Art</button>
+
+    <div id="extraContent">
+        <p>Art is a powerful way to express emotion, ideas, and culture. It's been a part of human life for thousands of years.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/01/31/21/23/paint-2020071_960_720.jpg" alt="Colorful art">
+    </div>
+
+    <script>
+        function toggleExtra() {
+            const extra = document.getElementById('extraContent');
+            if (extra.style.display === 'none' || extra.style.display === '') {
+                extra.style.display = 'block';
+            } else {
+                extra.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
